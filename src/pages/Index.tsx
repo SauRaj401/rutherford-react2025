@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import HeroCarousel from "@/components/HeroCarousel";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
+import AnnouncementBar from "@/components/AnnouncementBar";
 
 const Index = () => {
   const topSlides = [
@@ -38,6 +39,10 @@ const Index = () => {
         {/* Hero Carousel 1 */}
         <HeroCarousel slides={topSlides} />
 
+          <AnnouncementBar>
+          Australia's leading manufacturer in private label entertaining foods
+        </AnnouncementBar>
+
         {/* Core Range Section */}
         <section className="py-12">
           <div className="max-w-7xl mx-auto px-4">
@@ -63,15 +68,19 @@ const Index = () => {
                 </Link>
               ))}
 
-              {/* Placeholder card */}
-              <div className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              {/* Placeholder card (now links to /products) */}
+              <Link
+                to="/products"
+                className="block bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                aria-label="View more products"
+              >
                 <div className="p-3 text-center bg-gray-50">
-                  <h3 className="font-semibold text-sm text-gray-500">More Coming Soon</h3>
+                  <h3 className="font-semibold text-sm text-gray-500">&nbsp;</h3>
                 </div>
                 <div className="h-80 flex items-center justify-center bg-gray-100">
-                  <span className="text-gray-400 text-sm">Coming Soon</span>
+                  <span className="text-gray-400 text-sm">View More Products</span>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </section>

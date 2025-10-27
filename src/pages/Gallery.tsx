@@ -7,22 +7,22 @@ const Gallery = () => {
 
   // Example gallery images - you can add actual images to public/images/gallery/
   const galleryImages = [
-    { src: "/images/products/Wafers_Wheat_Based.png", alt: "Wheat Based Wafers" },
-    { src: "/images/products/Wafers_Gluten_Free.png", alt: "Gluten Free Wafers" },
-    { src: "/images/products/Artisan_Pita_Chips.png", alt: "Artisan Pita Chips" },
-    { src: "/images/products/Sweet_Biscuits.png", alt: "Sweet Biscuits" },
-    { src: "/images/products/SeededCracker-357.png", alt: "Seeded Crackers" },
-    { src: "/images/products/Lavosh_426.png", alt: "Lavosh" },
-    { src: "/images/products/Quince-468.png", alt: "Fruit Pastes" },
-    { src: "/images/heroup/1.png", alt: "Factory Production 1" },
-    { src: "/images/heroup/2.png", alt: "Factory Production 2" },
-    { src: "/images/heroup/3.png", alt: "Quality Control" },
-    { src: "/images/heroup/4.png", alt: "Packaging Line" },
-    { src: "/images/heroup/5.png", alt: "Product Range" },
-    { src: "/images/herodown/6.png", alt: "Manufacturing Facility" },
-    { src: "/images/herodown/7.png", alt: "Production Process" },
-    { src: "/images/herodown/8.png", alt: "Quality Assurance" },
-    { src: "/images/herodown/9.png", alt: "Final Product" },
+    { src: "/src/assets/images/products/Wafers_Wheat_Based.png", alt: "Wheat Based Wafers" },
+    { src: "/src/assets/images/products/Wafers_Gluten_Free.png", alt: "Gluten Free Wafers" },
+    { src: "/src/assets/images/products/Artisan_Pita_Chips.png", alt: "Artisan Pita Chips" },
+    { src: "/src/assets/images/products/Sweet_Biscuits.png", alt: "Sweet Biscuits" },
+    { src: "/src/assets/images/products/SeededCracker-357.png", alt: "Seeded Crackers" },
+    { src: "/src/assets/images/products/Lavosh_426.png", alt: "Lavosh" },
+    { src: "/src/assets/images/products/Quince-468.png", alt: "Fruit Pastes" },
+    { src: "/src/assets/images/heroup/1.png", alt: "Factory Production 1" },
+    { src: "/src/assets/images/heroup/2.png", alt: "Factory Production 2" },
+    { src: "/src/assets/images/heroup/3.png", alt: "Quality Control" },
+    { src: "/src/assets/images/heroup/4.png", alt: "Packaging Line" },
+    { src: "/src/assets/images/heroup/5.png", alt: "Product Range" },
+    { src: "/src/assets/images/herodown/6.png", alt: "Manufacturing Facility" },
+    { src: "/src/assets/images/herodown/7.png", alt: "Production Process" },
+    { src: "/src/assets/images/herodown/8.png", alt: "Quality Assurance" },
+    { src: "/src/assets/images/herodown/9.png", alt: "Final Product" },
   ];
 
   return (
