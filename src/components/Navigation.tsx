@@ -22,16 +22,16 @@ const Navigation = () => {
     <>
       {/* Top Header (boxed, not full-bleed) */}
       <div className="w-full py-2">
-        <Container>
+       
           <div className="bg-black text-white text-center py-2 text-sm rounded-sm">
           Rutherford Fine Foods
           </div>
-        </Container>
+      
       </div>
 
       {/* Header Section */}
       <header className="py-4 border-b bg-white">
-        <Container className="flex flex-col items-center">
+       
           {/* Logo */}
           <Link to="/">
             <img
@@ -92,7 +92,7 @@ const Navigation = () => {
               </div>
             </div>
           </nav>
-        </Container>
+      
       </header>
     </>
   );
