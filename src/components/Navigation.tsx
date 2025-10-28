@@ -47,12 +47,12 @@ const Navigation = () => {
              <div className="px-0">
               <div className="bg-black py-2 rounded-lg px-4">
                  {/* Desktop Navigation */}
-                 <div className="hidden md:flex flex-wrap justify-center space-x-6 text-lg font-medium">
+                 <div className="hidden md:flex flex-wrap justify-center md:space-x-8 lg:space-x-10 text-lg font-medium">
                    {navLinks.map((link) => (
                      <Link
                        key={link.name}
                        to={link.path}
-                       className={`transition-colors duration-300 ${
+                       className={`inline-block px-3 py-2 rounded transition-colors duration-300 ${
                          isActive(link.path) ? "text-white" : "text-gray-300 hover:text-white"
                        }`}
                      >
@@ -81,8 +81,8 @@ const Navigation = () => {
                          key={link.name}
                          to={link.path}
                          onClick={() => setIsOpen(false)}
-                         className={`block py-2 transition-colors duration-300 ${
-                           isActive(link.path) ? "text-white" : "text-gray-300 hover:text-white"
+                         className={`block px-4 py-2 rounded transition-colors duration-300 ${
+                           isActive(link.path) ? "bg-white/10 text-white" : "text-gray-300 hover:bg-white/5 hover:text-white"
                          }`}
                        >
                          {link.name}

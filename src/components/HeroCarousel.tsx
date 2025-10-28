@@ -8,9 +8,11 @@ interface Slide {
 interface HeroCarouselProps {
   slides: Slide[];
   autoplayInterval?: number;
+  // optional responsive height classes (Tailwind) e.g. "h-80 md:h-96 lg:h-[36rem]"
+  slideHeight?: string;
 }
 
-const HeroCarousel = ({ slides, autoplayInterval = 5000 }: HeroCarouselProps) => {
+const HeroCarousel = ({ slides, autoplayInterval = 5000, slideHeight = "h-80 md:h-96 lg:h-[36rem]" }: HeroCarouselProps) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoplayActive, setIsAutoplayActive] = useState(true);
 
@@ -43,20 +45,24 @@ const HeroCarousel = ({ slides, autoplayInterval = 5000 }: HeroCarouselProps) =>
   };
 
   return (
-    <section className="relative w-full overflow-hidden py-8">
+    <section className="relative w-full overflow-hidden py-4">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="relative w-full h-screen rounded-lg overflow-hidden">
+        {/* responsive viewport height with sensible min/max so images aren't tiny or huge */}
+        <div
+          className={`relative w-full ${slideHeight} min-h-[18rem] max-h-[60vh] rounded-lg overflow-hidden`}
+          // ensure the container can't exceed 60% of viewport height and has at least ~288px
+        >
           {/* Slides */}
-          <div 
+          <div
             className="flex h-full transition-transform duration-500 ease-in-out"
             style={{ transform: `translateX(-${currentSlide * 100}%)` }}
           >
             {slides.map((slide, index) => (
               <div key={index} className="w-full h-full flex-shrink-0">
-                <img 
-                  src={slide.image} 
-                  alt={`Slide ${index + 1}`} 
-                  className="w-full h-full object-cover"
+                <img
+                  src={slide.image}
+                  alt={`Slide ${index + 1}`}
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
             ))}
@@ -79,13 +85,13 @@ const HeroCarousel = ({ slides, autoplayInterval = 5000 }: HeroCarouselProps) =>
           </button>
 
           {/* Dots Indicator */}
-          <div className="absolute bottom-8 left-0 right-0 flex justify-center space-x-3 z-10">
+          <div className="absolute bottom-6 left-0 right-0 flex justify-center space-x-3 z-10">
             {slides.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
                 className={`h-3 rounded-full transition-all duration-300 hover:bg-white ${
-                  currentSlide === index ? 'bg-white w-10' : 'bg-white/60 w-3'
+                  currentSlide === index ? "bg-white w-10" : "bg-white/60 w-3"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               />

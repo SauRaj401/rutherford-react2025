@@ -42,7 +42,7 @@ const Footer = () => {
           <ul className="space-y-2 text-gray-400 mb-4">
             <li>60 Saintly Drive, Truganina VIC 3029</li>
             <li><a href="mailto:info@rutherfordfoodgroup.com.au" className="hover:text-white transition-colors">info@rutherfordfoodgroup.com.au</a></li>
-            <li><a href="tel:+61409902825" className="hover:text-white transition-colors">0409 902 825</a></li>
+            <li><a href="tel:+61392194191" className="hover:text-white transition-colors">(03) 9219 4191</a></li>
           </ul>
 
          
