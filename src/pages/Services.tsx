@@ -112,11 +112,19 @@ const Services = () => {
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-gray-900 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>Gourmet fruit pastes and preserves</span>
+                    <span>Gourmet fruit pastes</span>
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-gray-900 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                     <span>Sweet and savory biscuits</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-gray-900 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span>Lavish Flatbread</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-gray-900 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span>Biscotti/ Almond Bread</span>
                   </li>
                 </ul>
               </div>
