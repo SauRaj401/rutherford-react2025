@@ -3,6 +3,7 @@ import HeroCarousel from "@/components/HeroCarousel";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import AnnouncementBar from "@/components/AnnouncementBar";
+import Container from "@/components/Container";
 
 // image imports (bundle-safe)
 import top1 from "@/assets/images/heroup/1.jpg";

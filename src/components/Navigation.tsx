@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import Container from "@/components/Container";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,16 +22,16 @@ const Navigation = () => {
     <>
       {/* Top Header (boxed, not full-bleed) */}
       <div className="w-full py-2">
-        <div className="max-w-7xl mx-auto px-4">
+        <Container>
           <div className="bg-black text-white text-center py-2 text-sm rounded-sm">
-            Welcome to Rutherford Food Group.
+          Rutherford Fine Foods
           </div>
-        </div>
+        </Container>
       </div>
 
       {/* Header Section */}
       <header className="py-4 border-b bg-white">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col items-center">
+        <Container className="flex flex-col items-center">
           {/* Logo */}
           <Link to="/">
             <img
@@ -42,7 +43,7 @@ const Navigation = () => {
 
           {/* Navigation (boxed black background) */}
           <nav className="w-full mt-4">
-            <div className="max-w-7xl mx-auto px-0">
+            <div className="px-0">
               <div className="bg-black py-3 rounded-lg px-4">
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex flex-wrap justify-center space-x-6 text-lg font-medium">
@@ -51,9 +52,7 @@ const Navigation = () => {
                       key={link.name}
                       to={link.path}
                       className={`transition-colors duration-300 ${
-                        isActive(link.path)
-                          ? "text-white"
-                          : "text-gray-300 hover:text-white"
+                        isActive(link.path) ? "text-white" : "text-gray-300 hover:text-white"
                       }`}
                     >
                       {link.name}
@@ -82,9 +81,7 @@ const Navigation = () => {
                         to={link.path}
                         onClick={() => setIsOpen(false)}
                         className={`block py-2 transition-colors duration-300 ${
-                          isActive(link.path)
-                            ? "text-white"
-                            : "text-gray-300 hover:text-white"
+                          isActive(link.path) ? "text-white" : "text-gray-300 hover:text-white"
                         }`}
                       >
                         {link.name}
@@ -95,7 +92,7 @@ const Navigation = () => {
               </div>
             </div>
           </nav>
-        </div>
+        </Container>
       </header>
     </>
   );

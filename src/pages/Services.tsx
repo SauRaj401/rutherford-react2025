@@ -32,7 +32,7 @@ const Services = () => {
     {
       icon: Truck,
       title: "Supply Chain Management",
-      description: "Flexible supply solutions for small wholesalers to major retailers, with domestic and international distribution capabilities."
+      description: "Flexible supply chain solutions from food service to wholesalers and major retailers, both Australia-wide and internationally."
     }
   ];
 
