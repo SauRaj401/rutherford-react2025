@@ -10,7 +10,7 @@ const Footer = () => {
           <img
             src="/logo.png"
             alt="Rutherford Food Group logo"
-            className="w-40 h-24 mx-auto sm:mx-0 mb-4 rounded-lg p-2"
+            className="w-85 h-36 mx-auto sm:mx-0 mb-4 rounded-lg p-2"
           />
           <p className="text-sm text-gray-300 max-w-xs">
             Rutherford Food Group — Australia’s leading private-label manufacturer of premium entertaining foods. Trusted by retailers and foodservice partners for quality and consistency.

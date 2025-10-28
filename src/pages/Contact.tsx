@@ -43,37 +43,12 @@ const Contact = () => {
               <h2 className="text-xl font-bold">Rutherford Fine Foods & Head Office</h2>
               <p className="text-gray-700">60 Saintly Drive Truganina, Victoria, Australia 3029</p>
               <p className="text-gray-700">Tel: <a href="tel:+61392194191" className="text-blue-500">(03) 9219 4191</a></p>
+              <p className="text-gray-700">E-mail: <a href="tel:+61392194191" className="text-blue-500">info@rutherfordfoodgroup.com.au</a></p>
               
-              {/* Directors Section */}
-              <h2 className="text-xl font-bold mt-6">Directors</h2>
-              <div className="space-y-4 mt-4">
-                <div>
-                  <p className="text-gray-900 font-semibold">Sujan K.C</p>
-                  <p className="text-gray-700">
-                    <a href="mailto:Sujan@RutherfordFoodGroup.com.au" className="text-blue-500 text-base hover:underline">
-                      Sujan@RutherfordFoodGroup.com.au
-                    </a>
-                  </p>
-                  <p className="text-gray-700">
-                    <a href="tel:0409902825" className="text-blue-500 text-base hover:underline">0409 902 825</a>
-                  </p>
-                </div>
-                <div>
-                  <p className="text-gray-900 font-semibold">David Alexander Keri</p>
-                  <p className="text-gray-700">
-                    <a href="mailto:David@RutherfordFoodGroup.com.au" className="text-blue-500 text-base hover:underline">
-                      David@RutherfordFoodGroup.com.au
-                    </a>
-                  </p>
-                  <p className="text-gray-700">
-                    <a href="tel:0409902825" className="text-blue-500 text-base hover:underline">0409 902 825</a>
-                  </p>
-                </div>
-              </div>
               
-              <div className="mt-4">
+              <div className="mt-6">
                 <iframe 
-                  className="w-full h-56 rounded-lg shadow-md" 
+                  className="w-full h-80 rounded-lg shadow-md" 
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.223826128693!2d144.74615447698606!3d-37.81391467191473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d3f97d34567%3A0x45f6db5c2a2b3c87!2s60%20Saintly%20Dr%2C%20Truganina%20VIC%203029%2C%20Australia!5e0!3m2!1sen!2sau!4v1700000000000" 
                   allowFullScreen 
                   loading="lazy"
