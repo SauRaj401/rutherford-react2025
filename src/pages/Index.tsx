@@ -4,31 +4,52 @@ import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import AnnouncementBar from "@/components/AnnouncementBar";
 
+// image imports (bundle-safe)
+import top1 from "@/assets/images/heroup/1.jpg";
+import top2 from "@/assets/images/heroup/2.jpg";
+import top3 from "@/assets/images/heroup/3.jpg";
+import top4 from "@/assets/images/heroup/4.jpg";
+import top5 from "@/assets/images/heroup/5.jpg";
+import top6 from "@/assets/images/herodown/8.jpg";
+
+import bot1 from "@/assets/images/herodown/7.jpg";
+import bot2 from "@/assets/images/herodown/6.jpg";
+import bot3 from "@/assets/images/herodown/9.jpg";
+import bot4 from "@/assets/images/herodown/8.jpg";
+
+import pWheat from "@/assets/images/products/Wafers_Wheat_Based.png";
+import pGluten from "@/assets/images/products/Wafers_Gluten_Free.png";
+import pPita from "@/assets/images/products/Artisan_Pita_Chips.png";
+import pSweet from "@/assets/images/products/Sweet_Biscuits.png";
+import pSeeded from "@/assets/images/products/SeededCracker-357.png";
+import pLavosh from "@/assets/images/products/Lavosh_426.png";
+import pFruit from "@/assets/images/products/Quince-468.png";
+
 const Index = () => {
   const topSlides = [
-    { image: '/src/assets/images/heroup/1.png' },
-    { image: '/src/assets/images/heroup/2.png' },
-    { image: '/src/assets/images/heroup/3.png' },
-    { image: '/src/assets/images/heroup/4.png' },
-    { image: '/src/assets/images/heroup/5.png' },
-    { image: '/src/assets/images/herodown/8.png' },
+    { image: top1 },
+    { image: top2 },
+    { image: top3 },
+    { image: top4 },
+    { image: top5 },
+    { image: top6 },
   ];
 
   const bottomSlides = [
-    { image: '/src/assets/images/herodown/7.png' },
-    { image: '/src/assets/images/herodown/6.png' },
-    { image: '/src/assets/images/herodown/9.png' },
-    { image: '/src/assets/images/herodown/8.png' },
+    { image: bot1 },
+    { image: bot2 },
+    { image: bot3 },
+    { image: bot4 },
   ];
 
   const products = [
-    { name: "Wafers Wheat Based", image: "/src/assets/images/products/Wafers_Wheat_Based.png", id: "wafers-wheat" },
-    { name: "Wafers Gluten Free", image: "/src/assets/images/products/Wafers_Gluten_Free.png", id: "wafers-gluten-free" },
-    { name: "Artisan Pita Chips", image: "/src/assets/images/products/Artisan_Pita_Chips.png", id: "pita-chips" },
-    { name: "Sweet Biscuits", image: "/src/assets/images/products/Sweet_Biscuits.png", id: "sweet-biscuits" },
-    { name: "Seeded Crackers", image: "/src/assets/images/products/SeededCracker-357.png", id: "seeded-crackers" },
-    { name: "Lavosh", image: "/src/assets/images/products/Lavosh_426.png", id: "lavosh" },
-    { name: "Fruit Pastes", image: "/src/assets/images/products/Quince-468.png", id: "fruit-pastes" },
+    { name: "Wafers Wheat Based", image: pWheat, id: "wafers-wheat" },
+    { name: "Wafers Gluten Free", image: pGluten, id: "wafers-gluten-free" },
+    { name: "Artisan Pita Chips", image: pPita, id: "pita-chips" },
+    { name: "Sweet Biscuits", image: pSweet, id: "sweet-biscuits" },
+    { name: "Seeded Crackers", image: pSeeded, id: "seeded-crackers" },
+    { name: "Lavosh", image: pLavosh, id: "lavosh" },
+    { name: "Fruit Pastes", image: pFruit, id: "fruit-pastes" },
   ];
 
   return (

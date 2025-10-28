@@ -2,27 +2,47 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { useState } from "react";
 
+// bundle-safe image imports
+import pWheat from "@/assets/images/products/Wafers_Wheat_Based.png";
+import pGluten from "@/assets/images/products/Wafers_Gluten_Free.png";
+import pPita from "@/assets/images/products/Artisan_Pita_Chips.png";
+import pSweet from "@/assets/images/products/Sweet_Biscuits.png";
+import pSeeded from "@/assets/images/products/SeededCracker-357.png";
+import pLavosh from "@/assets/images/products/Lavosh_426.png";
+import pFruit from "@/assets/images/products/Quince-468.png";
+
+import top1 from "@/assets/images/heroup/1.jpg";
+import top2 from "@/assets/images/heroup/2.jpg";
+import top3 from "@/assets/images/heroup/3.jpg";
+import top4 from "@/assets/images/heroup/4.jpg";
+import top5 from "@/assets/images/heroup/5.jpg";
+
+import bot6 from "@/assets/images/herodown/6.jpg";
+import bot7 from "@/assets/images/herodown/7.jpg";
+import bot8 from "@/assets/images/herodown/8.jpg";
+import bot9 from "@/assets/images/herodown/9.jpg";
+
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  // Example gallery images - you can add actual images to public/images/gallery/
+  // use imported image variables so the bundler includes them in the production build
   const galleryImages = [
-    { src: "/src/assets/images/products/Wafers_Wheat_Based.png", alt: "Wheat Based Wafers" },
-    { src: "/src/assets/images/products/Wafers_Gluten_Free.png", alt: "Gluten Free Wafers" },
-    { src: "/src/assets/images/products/Artisan_Pita_Chips.png", alt: "Artisan Pita Chips" },
-    { src: "/src/assets/images/products/Sweet_Biscuits.png", alt: "Sweet Biscuits" },
-    { src: "/src/assets/images/products/SeededCracker-357.png", alt: "Seeded Crackers" },
-    { src: "/src/assets/images/products/Lavosh_426.png", alt: "Lavosh" },
-    { src: "/src/assets/images/products/Quince-468.png", alt: "Fruit Pastes" },
-    { src: "/src/assets/images/heroup/1.png", alt: "Factory Production 1" },
-    { src: "/src/assets/images/heroup/2.png", alt: "Factory Production 2" },
-    { src: "/src/assets/images/heroup/3.png", alt: "Quality Control" },
-    { src: "/src/assets/images/heroup/4.png", alt: "Packaging Line" },
-    { src: "/src/assets/images/heroup/5.png", alt: "Product Range" },
-    { src: "/src/assets/images/herodown/6.png", alt: "Manufacturing Facility" },
-    { src: "/src/assets/images/herodown/7.png", alt: "Production Process" },
-    { src: "/src/assets/images/herodown/8.png", alt: "Quality Assurance" },
-    { src: "/src/assets/images/herodown/9.png", alt: "Final Product" },
+    { src: pWheat, alt: "Wheat Based Wafers" },
+    { src: pGluten, alt: "Gluten Free Wafers" },
+    { src: pPita, alt: "Artisan Pita Chips" },
+    { src: pSweet, alt: "Sweet Biscuits" },
+    { src: pSeeded, alt: "Seeded Crackers" },
+    { src: pLavosh, alt: "Lavosh" },
+    { src: pFruit, alt: "Fruit Pastes" },
+    { src: top1, alt: "Factory Production 1" },
+    { src: top2, alt: "Factory Production 2" },
+    { src: top3, alt: "Quality Control" },
+    { src: top4, alt: "Packaging Line" },
+    { src: top5, alt: "Product Range" },
+    { src: bot6, alt: "Manufacturing Facility" },
+    { src: bot7, alt: "Production Process" },
+    { src: bot8, alt: "Quality Assurance" },
+    { src: bot9, alt: "Final Product" },
   ];
 
   return (

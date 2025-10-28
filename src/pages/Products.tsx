@@ -3,6 +3,15 @@ import Footer from "@/components/Footer";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+// image imports (bundle-safe)
+import pWheat from "@/assets/images/products/Wafers_Wheat_Based.png";
+import pGluten from "@/assets/images/products/Wafers_Gluten_Free.png";
+import pPita from "@/assets/images/products/Artisan_Pita_Chips.png";
+import pSweet from "@/assets/images/products/Sweet_Biscuits.png";
+import pSeeded from "@/assets/images/products/SeededCracker-357.png";
+import pLavosh from "@/assets/images/products/Lavosh_426.png";
+import pFruit from "@/assets/images/products/Quince-468.png";
+
 const Products = () => {
   const location = useLocation();
 
@@ -19,49 +28,49 @@ const Products = () => {
     {
       id: "wafers-wheat",
       name: "Wafers Wheat Based",
-      image: "/src/assets/images/products/Wafers_Wheat_Based.png",
+      image: pWheat,
       description: "Premium wheat-based wafers crafted with the finest ingredients. Perfect for cheese boards and entertaining.",
       features: ["All-natural ingredients", "Crispy texture", "Multiple flavor varieties"]
     },
     {
       id: "wafers-gluten-free",
       name: "Wafers Gluten Free",
-      image: "/src/assets/images/products/Wafers_Gluten_Free.png",
+      image: pGluten,
       description: "Delicious gluten-free wafers that don't compromise on taste or quality. Suitable for dietary requirements.",
       features: ["100% gluten-free", "Premium ingredients", "Light and crispy"]
     },
     {
       id: "pita-chips",
       name: "Artisan Pita Chips",
-      image: "/src/assets/images/products/Artisan_Pita_Chips.png",
+      image: pPita,
       description: "Handcrafted pita chips baked to perfection. Ideal for dips, hummus, and gourmet snacking.",
       features: ["Hand-cut", "Perfectly seasoned", "Oven-baked"]
     },
     {
       id: "sweet-biscuits",
       name: "Sweet Biscuits",
-      image: "/src/assets/images/products/Sweet_Biscuits.png",
+      image: pSweet,
       description: "Delightful sweet biscuits perfect for afternoon tea or dessert accompaniments.",
       features: ["Gourmet recipes", "Premium ingredients", "Multiple varieties"]
     },
     {
       id: "seeded-crackers",
       name: "Seeded Crackers",
-      image: "/src/assets/images/products/SeededCracker-357.png",
+      image: pSeeded,
       description: "Nutrient-rich crackers loaded with premium seeds. A healthy and delicious snacking option.",
       features: ["Packed with seeds", "High in fiber", "Artisanal quality"]
     },
     {
       id: "lavosh",
       name: "Lavosh",
-      image: "/src/assets/images/products/Lavosh_426.png",
+      image: pLavosh,
       description: "Traditional Middle Eastern flatbread crackers, thin and crispy. Perfect for elegant entertaining.",
       features: ["Traditional recipe", "Ultra-thin & crispy", "Versatile pairing"]
     },
     {
       id: "fruit-pastes",
       name: "Fruit Pastes",
-      image: "/src/assets/images/products/Quince-468.png",
+      image: pFruit,
       description: "Premium fruit pastes made from the finest fruits. The perfect companion for cheese and charcuterie boards.",
       features: ["100% natural fruit", "No preservatives", "Gourmet quality"]
     }
