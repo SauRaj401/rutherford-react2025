@@ -11,6 +11,38 @@ import glutenOriginal from "@/assets/images/variants/wafers_gluten_free_variants
 import activatedCharcoal from "@/assets/images/variants/wafers_gluten_free_variants/GF_Wafer_ActivatedCharcoal_078.jpg";
 import beetroot from "@/assets/images/variants/wafers_gluten_free_variants/GF_Wafer_Beetroot_093.jpg";
 
+// Artisan Pita Chips
+import herbGarlic from "@/assets/images/variants/astisan_pita_chips/PitaChips_GarlicandHerb_160.jpg";
+import oliveOilSeaSalt from "@/assets/images/variants/astisan_pita_chips/PitaChips_OliveandSeasalt_172.jpg";
+import parmesanRosemary from "@/assets/images/variants/astisan_pita_chips/PitaChips_ParmesanandRosemary_167.jpg";
+
+//sweet biscuits
+import gingernutSnaps from "@/assets/images/variants/sweet_biscuits/cookies_ginger_223.jpg";
+import vanillaCustardSnaps from "@/assets/images/variants/sweet_biscuits/cookies_vanilla_218.jpg";
+import doubleChocSnaps from "@/assets/images/variants/sweet_biscuits/cookies_choc_229.jpg";
+
+
+// Seeded Crackers
+import chiaCrackedBlackPepper from "@/assets/images/variants/seeded_crackers/SeededCrackers_pepper_180.jpg";
+import sharpCheddarCheese from "@/assets/images/variants/seeded_crackers/SeededCrackers_cheddar_193.jpg";
+
+
+// Lavosh / Flatbreads
+import lavoshParmesan from "@/assets/images/variants/lavosh_flatbeads/Lavosh_Parmesan_205.jpg";
+import lavoshPoppySeed from "@/assets/images/variants/lavosh_flatbeads/Lavosh_poppyseeds_210.jpg";
+import lavoshOriginal from "@/assets/images/variants/lavosh_flatbeads/Lavosh_Wheat_194.jpg";
+
+
+// Fruit Pastes
+import quincePear from "@/assets/images/variants/fruit_pastes/Quince_Pear_249.jpg";
+import quinceFig from "@/assets/images/variants/fruit_pastes/Quince_Fig_234.jpg";
+import fig from "@/assets/images/variants/fruit_pastes/Quince_fig_240.jpg";
+
+// Artisan Crackers
+import datesApricot from "@/assets/images/variants/artisan_crackers/Crackers_ApricotandDates_115.jpg";
+import cranberryPumpkinSeed from "@/assets/images/variants/artisan_crackers/Crackers_CranberryandPumpkin_105.jpg";
+import figPumpkinseed from "@/assets/images/variants/artisan_crackers/Crackers_FigandPumpkin_132.jpg";
+
 
 // product variant data
 const productsData = {
@@ -46,6 +78,86 @@ const productsData = {
       "Cracked Black Pepper",
     ],
   },
+  "pita-chips": {
+    title: "Artisan Pita Chips",
+    variants: [
+      { name: "Herb & Garlic", image: herbGarlic },
+      { name: "Olive Oil & Sea Salt", image: oliveOilSeaSalt },
+      { name: "Parmesan & Rosemary", image: parmesanRosemary },
+    ],
+    otherVariants: [
+      "Other variants available on request."
+    ],
+  },
+  "sweet-biscuits": {
+    title: "Sweet Biscuits",
+    variants: 
+    [
+      { name: "Gingernut Snaps", image: gingernutSnaps },
+      { name: "Vanilla Custard Snaps", image: vanillaCustardSnaps },
+      { name: "Double Choc Snaps", image: doubleChocSnaps },
+    ],
+    otherVariants: [
+     "Other variants on request."
+    ],
+  },
+  "seeded-crackers": {
+    title: "Seeded Crackers",
+    variants: [
+      { name: "Chia & Cracked Black Pepper", image: chiaCrackedBlackPepper },
+      { name: "Sharp Cheddar Cheese", image: sharpCheddarCheese },
+
+    ],
+    otherVariants: [
+      "Other variants on request."
+    ],
+  },
+  "lavosh": {
+    title: "Lavosh / Flatbreads",
+    variants: [
+      { name: "Parmesan Cheese", image: lavoshParmesan },
+      { name: "Poppy Seed", image: lavoshPoppySeed },
+      { name: "Original", image: lavoshOriginal },
+    ],
+    otherVariants: [
+      "More variants on request."
+    ],  
+  },
+  "fruit-pastes": {
+    title: "Fruit Pastes",
+    variants: [
+      { name: "Fig", image: fig },
+      { name: "Quince", image: quinceFig },
+      { name: "Pear", image: quincePear },
+    ],
+    otherVariants: [
+      "Fig & Almond",
+      "Hazelnut & Pear",
+      "Apricot & Pistachio",
+    ],
+  },
+  "artisan-crackers": {
+    title: "Artisan Crackers",
+    variants: [ 
+      { name: "Fig & Pumpkinseed", image: figPumpkinseed },
+      { name: "Dates & Apricot", image: datesApricot },
+      { name: "Cranberry & Pumpkin Seed", image: cranberryPumpkinSeed },
+    ],
+    otherVariants: [
+      "Fig & Olive",
+      "Rosemary & Raisin ",
+      "Cranberry Hazelnut ",
+      "Fig & Honey ",
+      "Quince & Almond ",
+      "Dates & Walnut ",
+    ], 
+    variantsWithAustralianNativeSpices:[
+      "Whittle Seed & Fig ",
+      "Saltbush & Cranberry ",
+      "Kakadu Plum & Basil ",
+    ] 
+  },
+
 };
 
 export default function ProductDetail() {

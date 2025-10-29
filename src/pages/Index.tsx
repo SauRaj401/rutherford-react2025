@@ -25,6 +25,8 @@ import pSweet from "@/assets/images/products/Sweet_Biscuits.png";
 import pSeeded from "@/assets/images/products/SeededCracker-357.png";
 import pLavosh from "@/assets/images/products/Lavosh_426.png";
 import pFruit from "@/assets/images/products/Quince-468.png";
+import artisanCrackers from "@/assets/images/products/Crackers_ApricotandDates_115.jpg";
+
 
 const Index = () => {
   const topSlides = [
@@ -51,6 +53,7 @@ const Index = () => {
     { name: "Seeded Crackers", image: pSeeded, id: "seeded-crackers" },
     { name: "Lavosh", image: pLavosh, id: "lavosh" },
     { name: "Fruit Pastes", image: pFruit, id: "fruit-pastes" },
+    { name: "Artisan Crackers", image: artisanCrackers, id: "artisan-crackers" },
   ];
 
   return (
@@ -91,7 +94,7 @@ const Index = () => {
               ))}
 
               {/* Placeholder card (now links to /products) */}
-              <Link
+              {/* <Link
                 to="/products"
                 className="block bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                 aria-label="View more products"
@@ -102,7 +105,7 @@ const Index = () => {
                 <div className="h-80 flex items-center justify-center bg-gray-100">
                   <span className="text-gray-400 text-sm">View More Products</span>
                 </div>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </section>
