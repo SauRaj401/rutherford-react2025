@@ -1,0 +1,51 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+
+name: RutherFord Fine Foods
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # strategy:
+    #   matrix:
+    #     node-version: [16.x, 18.x, 20.x]
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm install
+    - run: npm run build
+    # - run: npm test
+    #   env:
+    #     CI: true
+    # - name: Upload coverage to Codecov
+    #   uses: codecov/codecov-action@v4
+    #   with:
+    #     files: ./coverage/lcov.info
+    #     flags: unittests
+    #     name: codecov-${{ matrix.node-version }}
+    #     fail_ci_if_error: true
+    #     verbose: true
+    # want ftp deploy step here
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      with:
+        server: rutherford.gapsconnect.com.au
+        username: admin@rutherford.gapsconnect.com.au
+        password: 8!^@&F[dJiIw
+        local-dir: dist/
+        # server-dir: /dist
+        # protocol: ftps
+        # port: 21
+        # dry-run: false
+        # log-level: info
+        # good to go
+       

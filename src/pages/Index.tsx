@@ -74,7 +74,7 @@ const Index = () => {
               {products.map((product) => (
                 <Link
                   key={product.id}
-                  to={`/products#${product.id}`}
+                  to={`/products/${product.id}`}
                   className="block group focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 rounded-lg"
                 >
                   <div className="bg-white border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-0.5">
