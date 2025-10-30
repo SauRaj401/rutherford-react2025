@@ -6,9 +6,9 @@ import AnnouncementBar from "@/components/AnnouncementBar";
 import Container from "@/components/Container";
 
 // image imports (bundle-safe)
-import top1 from "@/assets/images/heroup/1.jpg";
+import top3 from "@/assets/images/heroup/1.jpg";
 import top2 from "@/assets/images/heroup/2.jpg";
-import top3 from "@/assets/images/heroup/3.jpg";
+import top1 from "@/assets/images/heroup/3.jpg";
 import top4 from "@/assets/images/heroup/4.jpg";
 import top5 from "@/assets/images/heroup/5.jpg";
 import top6 from "@/assets/images/herodown/8.jpg";
@@ -25,7 +25,7 @@ import pSweet from "@/assets/images/products/Sweet_Biscuits.png";
 import pSeeded from "@/assets/images/products/SeededCracker-357.png";
 import pLavosh from "@/assets/images/products/Lavosh_426.png";
 import pFruit from "@/assets/images/products/Quince-468.png";
-import artisanCrackers from "@/assets/images/products/Crackers_ApricotandDates_115.jpg";
+import artisanCrisps from "@/assets/images/products/Fruitcrackers-379.jpg";
 
 
 const Index = () => {
@@ -53,7 +53,7 @@ const Index = () => {
     { name: "Seeded Crackers", image: pSeeded, id: "seeded-crackers" },
     { name: "Lavosh", image: pLavosh, id: "lavosh" },
     { name: "Fruit Pastes", image: pFruit, id: "fruit-pastes" },
-    { name: "Artisan Crackers", image: artisanCrackers, id: "artisan-crackers" },
+    { name: "Artisan Crisps", image: artisanCrisps, id: "artisan-crisps" },
   ];
 
   return (
