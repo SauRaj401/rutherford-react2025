@@ -39,7 +39,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
         server: rutherford.gapsconnect.com.au
-        username: admin@rutherford.gapsconnect.com.au
+        username: adminfinefoods@rutherfordfoodgroup.com.au
         password: 8!^@&F[dJiIw
         local-dir: dist/
         # server-dir: /dist
