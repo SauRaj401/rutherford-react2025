@@ -230,6 +230,8 @@ export default function ProductDetail() {
           </section>
         )}
 
+        
+
         {/* Australian native spice variants (special) */}
         {product.variantsWithAustralianNativeSpices &&
           product.variantsWithAustralianNativeSpices.length > 0 && (
