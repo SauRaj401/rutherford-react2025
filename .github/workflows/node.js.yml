@@ -42,7 +42,7 @@ jobs:
       with:
         server: rutherfordfoodgroup.com.au
         username: adminfinefoods@rutherfordfoodgroup.com.au
-        password: aLJBH[TJ{k_A
+        password: G]1?-,@?sqFd
         local-dir: dist/
         # server-dir: /dist
         # protocol: ftps
