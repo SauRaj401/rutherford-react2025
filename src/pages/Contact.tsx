@@ -13,14 +13,38 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Message sent!",
-      description: "We'll get back to you as soon as possible.",
+
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const res = await fetch('https://rutherfordfinefoods.com.au/api/contact.php', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData),
     });
-    setFormData({ name: "", email: "", phone: "", message: "" });
-  };
+
+    const data = await res.json();
+    if (res.ok && data.ok) {
+      toast({ title: 'Message sent!', description: "We'll get back to you soon." });
+      setFormData({ name: '', email: '', phone: '', message: '' });
+    } else {
+      toast({ title: 'Send failed', description: data.message || 'Try again later.' });
+    }
+  } catch (err) {
+    toast({ title: 'Network error', description: 'Could not reach server.' });
+  }
+};
+
+
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   toast({
+  //     title: "Message sent!",
+  //     description: "We'll get back to you as soon as possible.",
+  //   });
+  //   setFormData({ name: "", email: "", phone: "", message: "" });
+  // };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });

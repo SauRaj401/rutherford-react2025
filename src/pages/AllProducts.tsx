@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Container from "@/components/Container";
+import SEO from "@/components/seo/seo";
 
 /* product card images (same images used on Index) */
 import pWheat from "@/assets/images/products/Wafers_Wheat_Based.png";
@@ -27,6 +28,14 @@ const products = [
 export default function AllProducts() {
   return (
     <div className="min-h-screen font-body bg-white text-gray-800 flex flex-col">
+      
+
+       <Seo
+        title="All Products"
+        description="Browse Rutherford Food Group's full product range — images and names for each product."
+        keywords="rutherford, products, crackers, biscuits, pita chips, lavosh"
+      />
+      
       <Navigation />
 
       <main className="flex-grow">

@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Seo from "@/components/seo/seo";
 
 // product images
 import wheatOriginal from "@/assets/images/variants/wheat_varients/WheatWafer_024.jpg";
@@ -230,8 +231,6 @@ export default function ProductDetail() {
           </section>
         )}
 
-        
-
         {/* Australian native spice variants (special) */}
         {product.variantsWithAustralianNativeSpices &&
           product.variantsWithAustralianNativeSpices.length > 0 && (
@@ -254,6 +253,11 @@ export default function ProductDetail() {
       </main>
 
       <Footer />
+      <Seo
+  title={product?.title ?? "Product"}
+  description={`View ${product?.title ?? "product"} variants and images.`}
+  keywords={`${product?.title ?? ""}, rutherford, product variants`}
+/>
     </div>
   );
 }
